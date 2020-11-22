@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import Date from '../../components/date';
 import { getAllProjectIds, getProjectData } from '../../lib/projects';
 import utilStyles from '../../styles/utils.module.css';
 import Link from 'next/link';
