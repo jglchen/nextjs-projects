@@ -1,5 +1,5 @@
 ---
-title: "John Chen's Introduction - A Simple Server-Rendered Website with Node.js"
+title: "John Chen's Personal Site - A Simple Server-Rendered Website with Node.js"
 description: 'a simple site with next.js'
 siteurl: '/'
 source: 'https://github.com/jglchen/nextjs-projects'

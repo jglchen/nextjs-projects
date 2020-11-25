@@ -39,14 +39,18 @@ export default function Home({ allProjectsData }) {
         <div className={utilStyles.listHorizon}>
            <div>HTML</div>
            <div>CSS</div>
-           <div>MySQL</div>
-           <div>MySQL Programming</div>
+           <div>SQL</div>
+           <div>MySQL Stored Procedures</div>
            <div>PHP</div>
            <div>JavaScript</div>
            <div>jQuey</div>
            <div>React</div>
            <div>React Native</div>
            <div>Java</div>
+           <div>Objective-C</div>
+           <div>Swift</div>
+           <div>R</div>
+           <div>ASP</div>
        </div> 
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
