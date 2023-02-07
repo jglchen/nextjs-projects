@@ -24,3 +24,5 @@ Therefore **getStaticProps** are employed to fetch the data into pages, **getSta
 ### [React Native GitHub](https://github.com/jglchen/react-native-nextjs-projects)
 ### back To [Series Home](https://jglchen.github.io/)
 
+{% include giscus.html %}
+
