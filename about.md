@@ -51,7 +51,7 @@ This is a project of my [Side Project Series](https://jglchen.github.io/), liste
 - #### [RealTime Stock Quote Demonstrations](https://jglchen.github.io/realtime-stock-next/)
     A demonstration to leverage the browser EventSource API to build a real-time React application.
 
-- #### [Build Applications from Website to Mobile - A Sample Server-Rendered Website with Node.js](https://jglchen.github.io/realtime-stock-next/)
+- #### [Build Applications from Website to Mobile - A Sample Server-Rendered Website with Node.js](https://jglchen.github.io/nextjs-projects/)
     A Brief Introduction of John Chen, a full-stack software developer. This site illustrates the side projects of John Chen for publicity to show up his technical capabilities and interests.
 
 - #### [React Markdown Editor](https://jglchen.github.io/react-md-editor/)
