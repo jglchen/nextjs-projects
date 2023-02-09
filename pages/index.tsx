@@ -51,6 +51,27 @@ export default function Home({ allProjectsData }: { allProjectsData: MatterItem[
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2 className={utilStyles.headingLg}>Skills</h2>
+        <div className={utilStyles.listHorizon}>
+          <div>CSS</div>
+          <div>HTML5</div>
+          <div>JavaScript</div>
+          <div>TypeScript</div>
+          <div>Node.js</div>
+          <div>React.js</div>
+          <div>Next.js</div>
+          <div>Express.js</div>
+          <div>React Native</div>
+          <div>SQL</div>
+          <div>MySQL</div>
+          <div>Firebase</div>
+          <div>Docker</div>
+          <div>REST API</div>
+          <div>GraphQL</div>
+          <div>PHP</div>
+        </div>
+      </section>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Projects</h2>
         <ul className={utilStyles.list}>
           {allProjectsData.map(({ id, title, description }) => (
