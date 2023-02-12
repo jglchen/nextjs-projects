@@ -68,6 +68,7 @@ export default function Home({ allProjectsData }: { allProjectsData: MatterItem[
           <div>Docker</div>
           <div>REST API</div>
           <div>GraphQL</div>
+          <div>jQuery</div>
           <div>PHP</div>
         </div>
       </section>
