@@ -1,7 +1,7 @@
 import Head from 'next/head';
+import { useState, useEffect, useRef } from 'react';
 import Layout from '@/components/layout';
 import { getAllProjectIds, getProjectData } from '@/lib/projects';
-import { useWindowSize } from '@react-hook/window-size';
 import utilStyles from '@/styles/utils.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -26,6 +26,14 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 }
 
 export default function Project({ projectData }: { projectData:  DataItem }) {
+  const homeEl = useRef<HTMLDivElement | null>(null);
+  const [panelWidth, setPanelWidth] = useState(45*18);
+  
+  useEffect(() => {
+    setPanelWidth((homeEl.current as HTMLDivElement).offsetWidth);
+  },[]);
+
+  
   function getUrlElm(urlStr: string, innerStr: string){
      if (!urlStr){
         return
@@ -45,29 +53,22 @@ export default function Project({ projectData }: { projectData:  DataItem }) {
         </Link>     
      );
   }
-  
-  const [width, height] = useWindowSize();
-  let panelWidth = 18 * 45;
-  if (panelWidth > width){
-     panelWidth = width;
-  }
   /*
   const imgSize = [
      {width: (panelWidth * 0.73).toFixed(), height: (panelWidth * 0.73 * 1600 / 2560).toFixed()},
      {width: (panelWidth * 0.21).toFixed(), height: (panelWidth * 0.21 * 2436 / 1125).toFixed()}
   ];*/
   const imgSize = [
-    {width: Math.round(panelWidth * 0.73), height: Math.round(panelWidth * 0.73 * 1600 / 2560)},
-    {width: Math.round(panelWidth * 0.21), height: Math.round(panelWidth * 0.21 * 2436 / 1125)}
+    {width: Math.round(panelWidth * 0.74), height: Math.round(panelWidth * 0.74 * 1600 / 2560)},
+    {width: Math.round(panelWidth * 0.22), height: Math.round(panelWidth * 0.22 * 2436 / 1125)}
   ];
-
 
   return (
     <Layout>
       <Head>
         <title>{projectData.title}</title>
       </Head>
-      <article>
+      <article ref={homeEl}>
         <h2 className={utilStyles.headingLx}>{projectData.title}</h2>
         <div className={utilStyles.lightText}>
           {projectData.description}
