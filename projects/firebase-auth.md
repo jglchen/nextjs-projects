@@ -17,4 +17,4 @@ This example creates an authentication system that uses a signed and encrypted c
 * The emails registered in Firebase Authentication are saved in a separate database for future data development of individual users, for this illustration Firestore Database.
 * Session data is signed and encrypted in a cookie.
 
-**iOS** and **Android** mobile apps are also delivered for authentication demonstration. The apps are developed with **React Native**, anyone who is interested can test the apps through **[the Expo Publish Link](https://expo.dev/@jglchen/firebase-auth-expo)** as above with **[Expo Go](https://expo.dev/client)** app.
+**iOS** and **Android** mobile apps are also delivered for authentication demonstration. The apps are developed with **React Native**, anyone who is interested can test the apps through **[the Expo Publish Link](https://exp.host/@jglchen/firebase-auth)** as above with **[Expo Go](https://expo.dev/client)** app.
